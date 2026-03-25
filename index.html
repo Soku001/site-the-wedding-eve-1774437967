@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding Eve - Premier Wedding Planner in New Delhi</title>
+    <meta name="description" content="The Wedding Eve: Your premier wedding planner in New Delhi, offering Free Consultation, Online Appointments, and an Expert Team for a Quality Guaranteed celebration.">
+    <meta name="keywords" content="Wedding planner, New Delhi, luxury wedding, destination wedding India, bespoke weddings, Free Consultation, Online Appointments, Expert Team, Quality Guaranteed, Customer Support">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;660;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #1a1a2e;
+            --accent-color: #4a90d9;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --light-text-color: #f8f9fa;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary-color);
+            line-height: 1.2;
+            font-weight: 660;
+        }
+
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.8rem; }
+        h4 { font-size: 1.5rem; }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text-color);
+            padding: 0.9rem 2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: #3a7acb; /* Slightly darker accent */
+            transform: translateY(-2px);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .section-subheading {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+
+        .navbar-brand {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--light-text-color);
+            margin-right: 1.5rem;
+            white-space: nowrap;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-grow: 1; /* Allows menu to take available space */
+            justify-content: flex-end; /* Pushes menu items to the right */
+        }
+
+        .nav-item a {
+            color: var(--light-text-color);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-item a:hover::after,
+        .nav-item a.active::after {
+            width: 100%;
+        }
+
+        .nav-item a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--light-text-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh; /* Adjust height for visual impact */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light-text-color);
+            overflow: hidden;
+            background-color: var(--primary-color); /* Fallback */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/featured/1600x900/?Wedding,planner,professional') no-repeat center center/cover;
+            filter: brightness(0.5); /* Darken background image */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--light-text-color);
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background-color: var(--background-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 2.5rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid var(--accent-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card i {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .service-card a {
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background-color: #fff;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .about-text, .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text h2 {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 5rem 0;
+            background-color: var(--background-color);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .review-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            position: relative;
+        }
+
+        .review-card i.fa-quote-left {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            opacity: 0.15;
+        }
+
+        .review-card p {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        .review-card .reviewer-info {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+        }
+        .review-card .reviewer-location {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* New Features Section */
+        .features {
+            padding: 5rem 0;
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+        }
+
+        .features .section-heading, .features .section-subheading {
+            color: var(--light-text-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.08); /* Semi-transparent white */
+            padding: 2.5rem 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--light-text-color);
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: #fff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .contact-info {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info h3 {
+            color: var(--light-text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p i {
+            margin-right: 15px;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            width: 30px; /* Ensure consistent alignment */
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--light-text-color);
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-form h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 4rem 0 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col h4 {
+            color: var(--light-text-color);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-col p, .footer-col address {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-col ul li a i {
+            margin-right: 8px;
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: var(--light-text-color);
+            border-radius: 50%;
+            text-align: center;
+            font-size: 2.2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            .nav-menu {
+                gap: 1rem;
+            }
+            .about-text, .about-image {
+                flex: 1 1 100%; /* Stack on smaller screens */
+            }
+            .about-image {
+                order: -1; /* Image above text on mobile */
+            }
+            .about-text h2 {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.5rem; }
+            .section-heading { font-size: 2rem; }
+
+            .navbar .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 1rem;
+                display: none; /* Hidden by default */
+                justify-content: flex-start;
+                gap: 0;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .nav-item {
+                width: 100%;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-item:last-child {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-item a {
+                padding: 1rem;
+                display: block;
+            }
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 1rem;
+                top: 1.2rem;
+            }
+
+            .hero {
+                height: 70vh;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .service-card, .review-card, .feature-card, .contact-info, .contact-form {
+                padding: 2rem 1rem;
+            }
+            .footer-col {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 0.8rem 1.5rem;
+            }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.8rem;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">The Wedding Eve</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#hero">Home</a></li>
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#about">About Us</a></li>
+                <li class="nav-item"><a href="#reviews">Testimonials</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Your Dream Wedding, Flawlessly Realized.</h1>
+            <p>The Wedding Eve brings unparalleled elegance and seamless execution to every celebration, crafting bespoke experiences for discerning clients in New Delhi and beyond.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-heading">Our Tailored Services</h2>
+            <p class="section-subheading">Experience the difference of a truly dedicated and innovative wedding planning partner.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Wedding planner</h3>
+                    <p>From grand visions to intimate details, we meticulously plan and execute every aspect of your special day with perfection.</p>
+                    <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Free Consultation</h3>
+                    <p>Begin your journey with a complimentary session to discuss your dreams and how we can bring them to life.</p>
+                    <a href="#contact">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Online Appointments</h3>
+                    <p>Schedule your planning sessions conveniently from anywhere, ensuring seamless communication and progress.</p>
+                    <a href="#contact">Schedule Online <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users-gear"></i>
+                    <h3>Expert Team</h3>
+                    <p>Our seasoned professionals possess extensive knowledge and creative flair to design and manage your perfect wedding.</p>
+                    <a href="#about">Meet Our Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Quality Guaranteed</h3>
+                    <p>We commit to the highest standards of service, ensuring every detail reflects impeccable quality and your absolute satisfaction.</p>
+                    <a href="#reviews">Our Promise <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support</h3>
+                    <p>Receive dedicated assistance and responsive communication throughout your planning process, 24/7 if needed.</p>
+                    <a href="#contact">Contact Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-heading">About The Wedding Eve</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/featured/900x600/?Wedding,planner,team" alt="The Wedding Eve Expert Team" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>At The Wedding Eve, we believe every wedding should be a masterpiece. Based in the heart of New Delhi, our passion lies in transforming your vision into an unforgettable reality. We specialize in crafting bespoke wedding experiences for clients who seek exceptional elegance and flawless execution.</p>
+                    <p>Our <a href="#services">Expert Team</a> brings a wealth of creativity, logistical precision, and a deep understanding of cultural nuances to every project. We pride ourselves on offering <a href="#services">Quality Guaranteed</a> services, ensuring that from your initial <a href="#services">Free Consultation</a> to your grand exit, every moment is perfect. We cater to discerning clients globally, with particular expertise in serving the US market looking for high-end celebrations in India.</p>
+                    <p>Let us handle every detail, so you can cherish every moment. Your extraordinary journey begins here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-heading">What Our Clients Say</h2>
+            <p class="section-subheading">Hear from couples who trusted The Wedding Eve with their most special day.</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The Wedding Eve truly made our dream wedding a reality in New Delhi! Their 'Wedding planner' service was impeccable, handling every intricate detail, from vendor coordination to decor. The 'Expert Team' was professional and incredibly supportive throughout. Highly recommend for a stress-free, luxurious event!</p>
+                    <div class="reviewer-info">Priya & Rahul K.</div>
+                    <div class="reviewer-location">New York, USA</div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>We started with a 'Free Consultation' and were immediately impressed. The team understood our vision perfectly. Their 'Online Appointments' made planning from California so easy and efficient. Our wedding in Janakpuri, New Delhi, was absolutely breathtaking and seamlessly managed thanks to their 'Quality Guaranteed' approach!</p>
+                    <div class="reviewer-info">Sarah & David M.</div>
+                    <div class="reviewer-location">Los Angeles, USA</div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The 'Customer Support' at The Wedding Eve is phenomenal. They were always available, even with the time difference, making us feel completely at ease. Our special day at 639A, Janakpuri, was magical, executed flawlessly by their 'Expert Team'. They exceeded every expectation!</p>
+                    <div class="reviewer-info">Ananya & Vikram S.</div>
+                    <div class="reviewer-location">London, UK</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-heading">Now Available: Enhanced Planning Experience</h2>
+            <p class="section-subheading">Innovating for your convenience and peace of mind, even after hours.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Chat</h3>
+                    <p>Get instant visitor support with our 24/7 Live Chat, ensuring your questions are answered anytime, anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Online Booking</h3>
+                    <p>Book your consultations and services directly through our website, eliminating the need for phone calls.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Assistant</h3>
+                    <p>Our intelligent AI Assistant answers common questions automatically, providing immediate information and guidance.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-phone-volume"></i>
+                    <h3>AI Voice Agent</h3>
+                    <p>Never miss a call or inquiry again. Our AI Voice Agent ensures every call is answered, every lead is captured.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-google"></i>
+                    <h3>Live Google Reviews</h3>
+                    <p>See our latest client feedback updated automatically on our site, showcasing real-time testimonials of our excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-heading">Connect with The Wedding Eve</h2>
+            <p class="section-subheading">Ready to plan your unforgettable wedding? Get in touch with our team today!</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:08076444100">080764 44100</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:reservations@weddingeve.com">reservations@weddingeve.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 639A, B1 Rd, B2A Block, Block B 2B, Janakpuri, New Delhi, Delhi, 110058</p>
+                    <p><i class="fas fa-clock"></i> Consultations by Appointment</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us an Enquiry</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Your Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Interested Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Wedding planner">Wedding planner</option>
+                                <option value="Free Consultation">Free Consultation</option>
+                                <option value="Online Appointments">Online Appointments</option>
+                                <option value="Expert Team">Expert Team (Service Inquiry)</option>
+                                <option value="Quality Guaranteed">Quality Guaranteed (General Inquiry)</option>
+                                <option value="Customer Support">Customer Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your wedding plans or inquiry..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>The Wedding Eve</h4>
+                <p>Your premier partner for luxury wedding planning in New Delhi, dedicated to crafting unforgettable experiences.</p>
+                <p>&copy; <span id="current-year"></span> The Wedding Eve. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero"><i class="fas fa-caret-right"></i> Home</a></li>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Services</a></li>
+                    <li><a href="#about"><i class="fas fa-caret-right"></i> About Us</a></li>
+                    <li><a href="#reviews"><i class="fas fa-caret-right"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-caret-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Wedding planner</a></li>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Free Consultation</a></li>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Online Appointments</a></li>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Expert Team</a></li>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Quality Guaranteed</a></li>
+                    <li><a href="#services"><i class="fas fa-caret-right"></i> Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 639A, B1 Rd, B2A Block, Block B 2B,<br> Janakpuri, New Delhi, Delhi, 110058</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:08076444100">080764 44100</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:reservations@weddingeve.com">reservations@weddingeve.com</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed with passion by The Wedding Eve</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918076444100" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navMenu = document.getElementById('nav-menu');
+
+            mobileMenu.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Smooth Scroll for Navigation Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                        }
+
+                        // Scroll to the target element with offset for fixed header
+                        const headerOffset = document.querySelector('.navbar').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+
+                        // Optionally update active class for nav links
+                        document.querySelectorAll('.nav-item a').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Set active class on nav links based on scroll position
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    // Adjust for sticky header height
+                    if (pageYOffset >= sectionTop - document.querySelector('.navbar').offsetHeight - 50) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Initial active link setting for when page loads already scrolled or at top
+            const firstSection = document.querySelector('section');
+            if (firstSection) {
+                const firstNavLink = document.querySelector(`.nav-menu a[href="#${firstSection.id}"]`);
+                if (firstNavLink) {
+                    firstNavLink.classList.add('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
